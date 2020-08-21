@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import Screen from "./Screen";
 
 function App() {
-  return <div className="App"></div>;
+  const [user] = useState({
+    name: "HappyDoHa!",
+  });
+  return (
+    <>
+      <Screen user={user} />
+      <h1>I`m App</h1>
+    </>
+  );
 }
 
 export default App;
