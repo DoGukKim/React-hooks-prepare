@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Screen from "./Screen";
-
+import UserContextProvider from "./Context";
 function App() {
-  const [user] = useState({
-    name: "HappyDoHa!",
-  });
   return (
-    <>
-      <Screen user={user} />
-      <h1>I`m App</h1>
-    </>
+    <UserContextProvider>
+      <Screen />
+    </UserContextProvider>
   );
 }
 

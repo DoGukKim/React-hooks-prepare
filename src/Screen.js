@@ -1,12 +1,11 @@
 import React from "react";
 import Header from "./Header";
 
-const Screen = ({ user }) => {
+const Screen = () => {
   return (
-    <>
-      <h3>Screen Page</h3>
-      <Header user={user} />
-    </>
+    <div>
+      <Header />
+    </div>
   );
 };
 
